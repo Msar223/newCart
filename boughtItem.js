@@ -122,24 +122,3 @@ let deleted =(id)=> {
 } 
 totalAmount()
 
-// add new car 
-
-let names= document.getElementById("item-name");
-let description= document.getElementById("description");
-let image= document.getElementById("new-image");
-let prices= document.getElementById("prices");
-
-let addCart= document.getElementById("btn-add-cart");
-addCart.addEventListener("submit", ()=>{
-  shopData.push({
-    id: 'T',
-    name: "names.value",
-    price: "prices.value",
-    img: "image.value",
-    desc: "description.value"
-  })
-  console.log(shopData.length)
-})
-
-
-
