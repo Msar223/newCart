@@ -15,7 +15,7 @@ calculation()
  let generateCartItems=()=> {
   if (basket.length !==0){
     label.innerHTML= `<h2>Total Bills: $<span id="total-amount"></span></h2>
-    <button class="homeBtn"><a href="cart.html">Home</a></button>
+    <button class="homeBtn"><a href="index.html">Home</a></button>
   <button onclick="deleteAll()" class="clear-cart">Clear Cart</button>`
    
     shoppingCart.innerHTML= basket.map((x)=>{
@@ -46,7 +46,7 @@ calculation()
   else {
     label.innerHTML=`
     <h2>Cart is empty</h2>
-    <button class="homeBtn" ><a href="cart.html" >Back to home</a></button>
+    <button class="homeBtn" ><a href="index.html" >Back to home</a></button>
     `
     shoppingCart.innerHTML=""
   };
